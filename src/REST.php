@@ -9,6 +9,13 @@
 namespace Vinlock\RESTCodes;
 
 
+/**
+ * Class REST
+ *
+ * A collection class of REST codes and helper functions.
+ *
+ * @package Vinlock\RESTCodes
+ */
 class REST {
 
     /**
@@ -18,10 +25,15 @@ class REST {
     const SWITCHING_PROTOCOLS = 101;
     const PROCESSING_WEBDAV = 102;
 
+    /**
+     * Check is code is Informational
+     *
+     * @param $code
+     * @return bool
+     */
     public static function isInformational($code) {
         return ($code >= 100 && $code <= 199);
     }
-
 
     /**
      * 2xx Success
@@ -36,6 +48,12 @@ class REST {
     const MULTI_STATUS_WEBDAV = 207;
     const ALREADY_REPORTED_WEBDAB = 208;
 
+    /**
+     * Check is code is success
+     *
+     * @param $code
+     * @return bool
+     */
     public static function isSuccess($code) {
         return ($code >= 200 && $code <= 299);
     }
@@ -52,6 +70,12 @@ class REST {
     const TEMPORARY_REDIRECT = 307;
     const PERMANENT_REDIRECT = 308;
 
+    /**
+     * Check is code is Redirect
+     *
+     * @param $code
+     * @return bool
+     */
     public static function isRedirect($code) {
         return ($code >= 300 && $code <= 399);
     }
@@ -87,6 +111,12 @@ class REST {
     const UNAVAILABLE_FOR_LEGAL_REASONS = 451;
     const CLIENT_CLOSED_REQUEST_NGINX = 499;
 
+    /**
+     * Check if code is Client Error
+     *
+     * @param $code
+     * @return bool
+     */
     public static function isClientError($code) {
         return ($code >= 400 && $code <= 499);
     }
@@ -109,6 +139,12 @@ class REST {
     const NETWORK_READ_TIMEOUT_ERROR = 598;
     const NETWORK_CONNECT_TIMEOUT_ERROR = 599;
 
+    /**
+     * Check if code is Server Error
+     *
+     * @param $code
+     * @return bool
+     */
     public static function isServerError($code) {
         return ($code >= 500 && $code <= 599);
     }
