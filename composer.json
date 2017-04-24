@@ -1,0 +1,17 @@
+{
+  "name": "Vinlock/RESTCodes",
+  "description": "A collection class of REST codes and helper functions.",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dak Washbrook",
+      "email": "me@dakw.me"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Vinlock\\RESTCodes\\": "src/"
+    }
+  }
+}
