@@ -1,5 +1,5 @@
 {
-  "name": "Vinlock/rest-codes",
+  "name": "vinlock/rest-codes",
   "description": "A collection class of REST codes and helper functions.",
   "minimum-stability": "dev",
   "license": "MIT",
